@@ -1,0 +1,140 @@
+
+main{
+    margin: 0 auto;
+
+    
+}
+
+section{
+    display:inline-flex;
+}
+
+aside{
+    height: 96vh;
+    min-width: 20vw;
+    background-color: rgb(168, 71, 6);
+   
+}
+
+h1{
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+span{
+    color: rgb(168, 71, 6);
+}
+
+h2{
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(168, 71, 6);
+}
+
+a:hover{
+    color: black;
+}
+
+p{
+    font-family: 'Arial Narrow','Franklin Gothic Medium', Arial, sans-serif
+}
+
+nav{
+    margin-top: 30vh;
+
+}
+
+article{
+    margin-top: 18vh;
+    margin-left: 3vw;
+    min-width: 70vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+img{
+    border-radius: 50%;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+
+    
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+nav a:hover{
+    color: white;
+}
+
+p a{
+    text-decoration: none;
+    color:black;
+}
+
+p a:hover{
+    color: gray;
+}
+
+
+ul{
+    
+    text-align:center;
+    padding-left:0px;
+}
+
+li{      
+   padding: 10px;
+   font-family:'Arial Narrow Bold', sans-serif;
+
+}
+
+.links ul{
+    text-align: left;
+    margin-left: 0px;
+    
+}
+
+.links li{
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 18px;
+}
+.links img{
+    width: 40px;
+    
+}
+
+.links a:hover{
+    color: rgb(168, 71, 6);
+}
+
+.li_objetivos{
+    text-align: left;
+}
+
+#ul_objetivos{
+    padding-top: 10vh;
+}
+
+ol{
+    padding-top: 10vh;
+    list-style:upper-alpha;
+}
+
+#index_menu, #conhecimentos_menu, #objetivos_menu{
+    color: white;
+}
