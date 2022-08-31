@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
+
+.box-1{
+
+    right: 5px;
+    bottom: 5px;
+    position: absolute;
+   
+
+}
+
+.box-2{
+    right: 110px;
+    bottom: 5px;
+    position: absolute;
+    
+}
+
+.box-3{
+    right: 215px;
+    bottom: 5px;;
+    position: absolute;
+}
+
+.box-4{
+    right: 5px;
+    bottom: 110px;
+    position: absolute;
+}
+
+.box-5{
+    right: 110px;
+    bottom: 110px;
+    position: absolute;
+}
+
+.box-6{
+    right: 5px;
+    bottom: 215px;
+    position: absolute;
+}
+
+.box-7{
+    left: 5px;
+    top: 5px;
+    position: absolute;
+}
+
+.box-8{
+    left: 110px;
+    top: 5px;
+    position: absolute;
+}
+
+.box-9{
+    left: 215px;
+    top: 5px;
+    position: absolute;
+}
+
+.box-10{
+    left: 5px;
+    top: 110px;
+    position: absolute;
+}
+
+.box-11{
+    left: 110px;
+    top: 110px;
+    position: absolute;
+}
+
+.box-12{
+    left: 5px;
+    top: 215px;
+    position: absolute;
+}

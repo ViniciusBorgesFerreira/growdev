@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    position: relative;
+}
+
+.azul{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    position: absolute;
+    left: calc(50vw - 300px);
+    top: calc(50vh - 300px);
+
+}
+
+.vermelha{
+    width: 480px;
+    height: 480px;
+    background-color: red;
+    position: absolute;
+    left: calc(50vw - 240px);
+    top: calc(50vh - 240px);
+}
+
+.preta{
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    position: absolute;
+    left: calc(50vw - 175px);
+    top: calc(50vh - 175px);
+}
+
+.verde{
+    width: 230px;
+    height: 230px;
+    background-color:green;
+    position: absolute;
+    left: calc(50vw - 115px);
+    top: calc(50vh - 115px);
+}
+
+.amarela{
+    width: 130px;
+    height: 130px;
+    background-color: yellow;
+    position: absolute;
+    left: calc(50vw - 65px);
+    top: calc(50vh - 65px);
+}
+
+
