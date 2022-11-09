@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recados</title>
+
+   <style>
+
+      #botaoAtualizarRecados {
+      display: none;
+      }
+        
+        
+      table, th, td {  
+          border: 1px solid grey;  
+          border-collapse: collapse;  
+      }  
+        
+      th, td {  
+          padding: 10px; 
+          width: 200px;
+          text-align: center;
+      }  
+        
+      table th {  
+          color: white;  
+          background-color: rgb(81, 44, 248);
+      }  
+        
+      tbody th{
+          opacity: .8;
+      }
+        
+      img{
+          margin: 0 10px 0 10px;
+      }
+        
+      input[type=submit]{
+          all: unset;
+          background-color: rgb(81, 44, 248);
+          color: white;
+          border: none;
+          margin: 0px;
+          padding: 5px;
+          
+      }
+        
+      div#msg-erro{
+          color: red
+      }
+
+      #descricao{
+        width: 400px;
+        height: 22px
+      }
+      
+      #detalhamento{
+        width: 400px;
+        height: 22px;
+      }
+   </style>
+
+  </head>
+
+  <body style="margin: 25px">
+    <h1>Meus Recados</h1>
+
+    <div>
+      <form id="form_recados">
+
+        <input type="text" placeholder="Descrição" id="descricao" name="descricao" required/>      
+        <input type="text" placeholder="Detalhamento" id="detalhamento" name="detalhamento" required/>    
+        <input type="submit" value="Salvar" id="botaoSalvar">
+        <input type="button" value="Sair" id="botaoLogout" onclick="sair()">
+        <input type="button" value="Atualizar" id="botaoAtualizar" style="display:none">
+        <input type="button" value="Cancelar" id="botaoCancelar" style="display: none">
+      </form>
+    </div>
+
+    <br /><br />
+
+    <table>
+      <caption>
+        <h3>Lista de recados</h3>
+      </caption>
+
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Descrição</th>
+          <th>Detalhamento</th>
+          <th>Ação</th>
+          
+        </tr>
+      </thead>
+
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+    <script src="recados.js"></script>
+  </body>
+</html>
