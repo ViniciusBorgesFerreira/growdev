@@ -1,0 +1,135 @@
+*{
+    font-family:'Roboto', sans-serif ;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+a :hover{
+    text-decoration: none;
+    color:rgba(74, 187, 21, 0.867);
+    transition: 1s;
+}
+
+main{
+    background-color: white;
+}
+
+img{
+    width:50px;
+    height:50px
+}
+img :hover{
+    width:70px;
+    height:70px
+}
+
+#card-login{
+    background-color: rgba(124, 218, 80, 0.867);
+    height: 500px;
+   
+}
+
+#card{
+    color:rgba(74, 187, 21, 0.867);
+    animation: bounceIn 1s;
+    height:500px;
+    width:400px;
+    border-radius:5%;
+    box-shadow: 4px 5px 2px black;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+
+}
+
+#btn-signIn{
+    border-radius: 25px;
+    width: 150px;
+    background-color: white;
+    border:rgba(53, 157, 5, 0.867) solid 1px;
+    color:rgba(53, 157, 5, 0.867);
+    transition: 1s;
+}
+
+#btn-signIn:hover{
+    background-color: rgba(53, 157, 5, 0.867);
+    border:rgba(53, 157, 5, 0.867) solid 1px;
+    color:white;
+    transition: 1s;
+}
+
+#btn-createAccount{
+    border-radius: 25px;
+    width: 150px;
+    background-color: white;
+    border:none;
+    color:rgba(73, 116, 52, 0.867);
+    transition: 1s;
+}
+
+#btn-createAccount:hover{
+    border-radius: 25px;
+    width: 150px;
+    background-color: rgba(73, 116, 52, 0.867);    
+    color: white;
+    transition: 1s;
+}
+
+#main_recados{
+    margin-top: 20px;      
+    border-radius: 15px;
+    box-shadow: 4px 5px 2px black;   
+    animation: bounceIn 1s;
+
+}
+
+body{
+    background-color: rgba(124, 218, 80, 0.867);
+}
+
+#botaoLogout{
+    background-color: white ;
+    color: rgba(73, 116, 52, 0.867); 
+    transition: 0.5s;
+}
+
+#botaoLogout:hover{
+    background-color: rgba(73, 116, 52, 0.867); 
+    color:white; 
+    transition: 0.5s;
+}
+
+#btn-sair{  
+    padding-top: 1px;
+    padding-bottom: 1px; 
+   
+    border:1px solid red;
+    color: red;
+    background-color: white;
+    transition: 0.5s;
+}
+
+#btn-sair:hover{
+    
+    color: white;
+    background-color: red;
+    transition: 0.5s;
+}
+    

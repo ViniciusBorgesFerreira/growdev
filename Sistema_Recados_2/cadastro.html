@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Cadastro</title>
+    
+</head>
+<body>
+    <main class="container-fluid">
+        <section id="card-login" class="row vh-100 d-flex  justify-content-center align-items-center text-center">
+            <div id="card" class=" col-sm-12 col-md-4 d-flex bg-white justify-content-center align-items-center ">
+                <div>
+                    <h1 class="mb-5">Sign up</h1>
+    
+                    <!--<nav class="navbar">
+                        <ul class="container d-flex justify-content-between list-unstyled ">
+                            <a href="#" class=""><li class="p-1"><img src="./assets/img/facebook (1).png"></li></a>
+                            <a href="#"><li class="p-1"><img src="./assets/img/google-plus.png"></li></a>
+                            <a href="#"><li class="p-1"><img src="./assets/img/linkedin (1).png"></li></a>
+                        </ul>
+                    </nav>-->
+
+                    <!--<p>or create your account</p>-->
+                   <div>
+                     
+                        <div id="user_alert1" class="alert alert-danger" role="alert" style="display: none"  >
+                            <strong id="msg">Email já cadastrado!</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" ></button>
+                        </div>
+
+                        <div id="user_alert2" class="alert alert-danger" role="alert" style="display: none"  >
+                            <strong id="msg">Digite senhas iguais!</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" ></button>
+                        </div>
+
+                        <div id="user_alert3" class="alert alert-success" role="alert" style="display: none"  >
+                            <strong id="msg">Cadastrado com sucesso!</strong>
+                            
+                        </div>
+                   </div>
+
+                    <form id="form_cadastro">
+                        <div class="mb-3">                  
+                            <input type="email" class="form-control" placeholder="Email" id="email" aria-describedby="emailHelp" required>                        
+                        </div>
+                        <div class="mb-3">                  
+                            <input type="password" class="form-control white" id="senha" placeholder="Password" required>
+                        </div>
+                        <div class="mb-3">                  
+                            <input type="password" class="form-control white" id="confirma_senha" placeholder="Confirm Password" required>
+                        </div>                         
+                                               
+                        <input id="btn-create" type="submit" class="btn btn-primary" value="CREATE">
+                                    
+                        
+                    </form>
+                    
+                </div>
+            </div> 
+            
+            
+        </section>
+      
+
+    </main>
+    <script src="assets/js/cadastro.js"></script>
+</body>
+</html>
+
+
+
+
+
+   

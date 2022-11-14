@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Recados</title>
+</head>
+<body>
+  
+    <main id="main_recados" class="container">
+      
+
+        <section id="conteudo" class="pt-2 ">
+            <div class="row mt-3">
+                <div id="formulario" class="ms-3">
+                    <h1>Meus Recados</h1>
+                    <!-- Button trigger modal -->
+                    <button id="btn-sair" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Sair
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cuidado!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Você realmente deseja sair?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success" onclick="sair()">Confirmar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>     
+                    
+                    <!-- Modal2 -->
+                    <div class="modal fade" id="modalApagar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cuidado!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Você realmente deseja deletar este recado??
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success" id="confirmaDel">Confirmar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>     
+                      
+
+                    <form id="form_recados">
+                        <div class="form-row d-flex mt-4">
+                          <div class="col-sm-12 col-md-3 me-2">
+                            <input id="descricao" type="text" class="form-control" placeholder="Descrição">
+                          </div>
+                          <div class="input-group mb-5 me-5">
+                            <input id="detalhamento" type="text" class="form-control" placeholder="Detalhamento" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <input id="botaoSalvar" class="btn btn-primary" type="submit" value="Salvar">
+                            </div>
+                            
+                            <input type="button"  value="Atualizar" id="botaoAtualizar" style="display:none">
+                            <input type="button" value="Cancelar" id="botaoCancelar" style="display: none">
+                          </div>
+                        </div>
+                      </form>
+                      
+    
+                </div>
+                <div class="tabela">
+                    <table class="table col-sm-12 col-md-8  text-center">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Descrição</th>
+                            <th>Detalhamento</th>
+                            <th>Ação</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody id="tbody">
+                                                                             
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="assets/js/recados.js"></script>
+</body>
+</html>
