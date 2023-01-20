@@ -160,10 +160,10 @@ function Form({ mode }: FormProps) {
         }        
 
         dispatch(setUsuarioLogado({name: userExist!.name, email: userExist!.email, password: userExist!.password}))
-        alert('Login efetuado com sucesso! Redirecionando...')
+        
         setTimeout(() => {
         navigate('/home')
-    }, 1500)
+    }, 2500)
         
         
     }
