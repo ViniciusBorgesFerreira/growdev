@@ -69,13 +69,11 @@ function Modal({ open, handleClose, id, mode }: ModalProps) {
                         </DialogTitle>
     
                         <DialogContent>
-                            <DialogContentText id="alert-dialog-description">
-                               Informe a descrição e o detalhamento.
-                            </DialogContentText>
+                            
                             <>
-                                <TextField value={description} name='description' label='Descrição' onChange={ (ev) => setDescription(ev.target.value)}/>
+                                <TextField value={description} name='description' label='Descrição' variant='filled' onChange={ (ev) => setDescription(ev.target.value)}/>
                                     
-                                <TextField value={detail} name='detail' label='Detalhamento' onChange={ (ev) => setDetail(ev.target.value)}/>
+                                <TextField value={detail} name='detail' label='Detalhamento' variant='filled' onChange={ (ev) => setDetail(ev.target.value)}/>
                             </>
                         </DialogContent>
                     </React.Fragment>
